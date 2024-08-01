@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "9e177b5e-5510-473c-b05f-33355358b6f5",
+		"name": "MongoDb_project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37238687"
+	},
+	"item": [
+		{
+			"name": "Tutorial",
+			"item": [
+				{
+					"name": "retrieve all Tutorials",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/tutorials",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"tutorials"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create new Tutorial",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"66a949716e6d2d322a5fdd53\",\r\n  \"title\": \"Dovlet3\",\r\n  \"description\": \"Java\",\r\n  \"published\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/tutorials",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"tutorials"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "retrieve a Tutorial by :id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/tutorials/66a8e89e8173e618a5040abc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"tutorials",
+								"66a8e89e8173e618a5040abc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update a Tutorial by :id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Dovlet3\",\r\n    \"description\": \"Software\",\r\n    \"published\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/tutorials/66a94a5eadadfd231fb3509a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"tutorials",
+								"66a94a5eadadfd231fb3509a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a Tutorial by :id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/tutorials/66a94a5eadadfd231fb3509a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"tutorials",
+								"66a94a5eadadfd231fb3509a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "\tfind all published Tutorials",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/tutorials/published",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"tutorials",
+								"published"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find all Tutorials which title contains keyword",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/tutorials",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"tutorials"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
